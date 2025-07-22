@@ -1,20 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Anonymous Chat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>🐱 Anonymous Chatroom</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="chat-container">
-        <h2>🦊 Anonymous Chatroom</h2>
-        <div id="messages"></div>
-        <form id="chat-form">
-            <input type="text" id="msg" autocomplete="off" placeholder="Type your message..." />
-            <button>Send</button>
-        </form>
-    </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="script.js"></script>
+  <div class="chat-container">
+    <h1>🐱 Anonymous Chatroom</h1>
+    <ul id="messages" style="list-style: none; padding: 0;"></ul>
+
+<form id="chat-form">
+  <input id="message-input" autocomplete="off" placeholder="Type your message..." />
+  <button>Send</button>
+</form>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+  
 </body>
 </html>
